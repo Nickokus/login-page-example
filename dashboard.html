@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard | Panel Principal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Estas en el dashboard</p>
+    <main class="dashboard-page">
+        <aside class="sidebar">
+            <div>
+                <h2>Mi Panel</h2>
+                <nav class="menu">
+                    <a href="#">Inicio</a>
+                    <a href="#">Proyectos</a>
+                    <a href="#">Mensajes</a>
+                    <a href="#">Config</a>
+                </nav>
+            </div>
+            <a class="logout-link" href="index.html">
+                Cerrar Sesion
+            </a>
+        </aside>
+        <section class="dashboard-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1>Te damos la Bienvenida</h1>
+                    <p>Este es tu panel principal de trabajo</p>
+                </div>
+                <span class="user-badge">
+                    Usuario Activo
+                </span>
+            </header>
+
+            <section class="summary-cards">
+
+                <article class="summary-card">
+                    <h3>Proyectos</h3>
+                    <p class="summary-number">4</p>
+                    <span>Activos este mes</span>
+                </article>
+
+                <article class="summary-card">
+                    <h3>Tareas</h3>
+                    <p class="summary-number">12</p>
+                    <span>Pendientes</span>
+                </article>
+
+                <article class="summary-card">
+                    <h3>Mensaje</h3>
+                    <p class="summary-number">7</p>
+                    <span>Sin Leer</span>
+                </article>
+
+            </section>
+
+            <section class="activity-panel">
+                <h2>Actividad Reciente</h2>
+                <div class="activity-list">
+                    <article class="activity-item">
+                        <strong>Proyecto Actualizado</strong>
+                        <p>Se modifico la estructura inicial del sitio web.</p>
+                    </article>
+
+                    <article class="activity-item">
+                        <strong>Nueva Tarea</strong>
+                        <p>Diseñar la pantalla de inicio usando Flexbox.</p>
+                    </article>
+
+                    <article class="activity-item">
+                        <strong>Mensaje recibido</strong>
+                        <p>El equipo dejó comentarios sobre el prototipo.</p>
+                    </article>
+                </div>
+
+            </section>
+
+        </section>
+    </main>
 </body>
 </html>
